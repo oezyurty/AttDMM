@@ -10,22 +10,24 @@ We made our experiments on MIMIC-III dataset, which is not publicly availiable. 
 After downloading MIMIC-III, you can use the following github repo for the pre-processing: https://github.com/USC-Melady/Benchmarking_DL_MIMICIII . 
 
 To be aligned with our AttDMM implementation, you need to have the following files under each fold directory.
-1. Time-series features:
+1. Time-series features (N,T,M):
 	1. time_series_training.npy
 	1. time_series_val.npy
 	1. time_series_test.npy
-1. Static features:
+1. Static features (N,S):
 	1. nontime_series_training.npy
 	1. nontime_series_val.npy
 	1. nontime_series_test.npy
-1. Time-series masks:
+1. Time-series masks (N,T,M):
 	1. time_series_training_masking.npy
 	1. time_series_val_masking.npy
 	1. time_series_test_masking.npy
-1. Mortality Labels:
+1. Mortality Labels (N):
 	1. y_mor_training.npy
 	1. y_mor_val.npy
 	1. y_mor_test.npy
+
+where N is number of time-series, T is number of time steps, M is number of time-series features, and S is number of static features.
 
 ## Example Usage
 
