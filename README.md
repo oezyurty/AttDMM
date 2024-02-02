@@ -1,3 +1,17 @@
+# AttDMM: An Attentive Deep Markov Model for Risk Scoring in Intensive Care Units
+
+The original implementation of the paper. You can cite the paper as below. 
+
+```
+@inproceedings{ozyurt2021attdmm,
+  title={AttDMM: an attentive deep Markov model for risk scoring in intensive care units},
+  author={Ozyurt, Yilmazcan and Kraus, Mathias and Hatt, Tobias and Feuerriegel, Stefan},
+  booktitle={Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining},
+  pages={3452--3462},
+  year={2021}
+}
+```
+
 ## Dependencies 
 
 For a straight-forward use of AttDMM, you can install the required libraries from *requirements_attdmm.txt*:
